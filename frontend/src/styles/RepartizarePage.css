@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.repartizare-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e0f7fa, #e0f2fe);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.profesori-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profesori-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+  background-color: #0369a1;
+  transform: scale(1.05);
+}
+
+.form-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #334155;
+}
+
+select, input[type="text"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  transition: all 0.3s;
+}
+
+select:focus, input[type="text"]:focus {
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  font-weight: 500;
+  color: #475569;
+  cursor: pointer;
+}
+
+.repartizare-button {
+  padding: 0.8rem 1.6rem;
+  background-color: #10b981;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.repartizare-button:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+.success-message, .error-message {
+  margin-top: 20px;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.tabel-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.tabel-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  margin-bottom: 1rem;
+}
+
+table thead {
+  background-color: #0284c7;
+  color: white;
+}
+
+table th {
+  padding: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+table td {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  text-align: center;
+}
+
+table tr:hover td {
+  background-color: #f1f5f9;
+}
+
+.export-button {
+  margin-top: 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.export-button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+.toast-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #10b981;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+  animation: slideIn 0.5s ease forwards;
+  z-index: 1000;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

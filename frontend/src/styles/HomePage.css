@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8ff);
+  padding: 0 2rem;
+}
+
+.homepage-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid #90cdf4;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nav-button {
+  padding: 0.7rem 1.4rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.welcome-box {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-box h2 {
+  font-size: 2rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #0ea5e9;
+  font-weight: 700;
+}
+
+.homepage-text {
+  font-size: 1.1rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+.homepage-footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #e0f2fe;
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: 2rem;
+  border-top: 1px solid #cbd5e1;
+}
