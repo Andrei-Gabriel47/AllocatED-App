@@ -34,17 +34,13 @@ This project follows a **3-tier architecture**:
 ### Frontend:
 - React
 - React Router
-- Axios
-- TailwindCSS / Bootstrap (if used)
+
 
 ### Backend:
 - Java 17+
 - Spring Boot
-- Spring MVC
 - Spring Data JPA
 - PostgreSQL
-- Lombok (optional)
 
----
 
 
