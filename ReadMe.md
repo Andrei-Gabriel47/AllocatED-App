@@ -37,7 +37,7 @@ This project follows a **3-tier architecture**:
 
 
 ### Backend:
-- Java 17+
+- Java 23+
 - Spring Boot
 - Spring Data JPA
 - PostgreSQL
